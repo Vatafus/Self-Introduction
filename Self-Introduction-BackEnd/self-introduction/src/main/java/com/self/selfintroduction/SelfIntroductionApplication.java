@@ -9,5 +9,4 @@ public class SelfIntroductionApplication {
     public static void main(String[] args) {
         SpringApplication.run(SelfIntroductionApplication.class, args);
     }
-
 }
