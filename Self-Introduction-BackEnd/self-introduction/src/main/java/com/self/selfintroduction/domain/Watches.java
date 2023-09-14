@@ -19,4 +19,9 @@ public class Watches {
 
     @Column(name="type")
     private String type;
+
+    @Column(name="image")
+    @Lob
+    private byte[] image;
+
 }
