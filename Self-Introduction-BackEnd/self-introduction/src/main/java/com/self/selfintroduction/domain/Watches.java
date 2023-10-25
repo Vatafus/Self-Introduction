@@ -21,7 +21,6 @@ public class Watches {
     private String type;
 
     @Column(name="image")
-    @Lob
-    private byte[] image;
+    private String imageURL;
 
 }
