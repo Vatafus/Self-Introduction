@@ -27,6 +27,14 @@ public class WatchController {
 
     @PostMapping("/addwatch")
     public Watches addwatch(@RequestBody @Valid Watches watch) {
+        if (watcheService.isTableEmpty()) {
+            watcheService.resetSequence();
+        }
         return watcheService.addNewWatch(watch);
+    }
+
+    @DeleteMapping("/deletewatch")
+    public void deleteWatch(Long id){
+         watcheService.deleteWatch(id);
     }
 }

@@ -1,0 +1,4 @@
+package com.self.selfintroduction.domain;
+
+public class Countries {
+}
