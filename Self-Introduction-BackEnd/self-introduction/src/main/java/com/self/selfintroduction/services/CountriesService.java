@@ -27,4 +27,8 @@ public class CountriesService {
     public Countries addNewCountrie(Countries countries){
         return countriesRepo.save(countries);
     }
+
+    public void deleteCountrie(Long id){
+        countriesRepo.deleteById(id);
+    }
 }

@@ -26,4 +26,9 @@ public class CountriesController {
     public Countries addCountrie(@RequestBody @Valid Countries countries){
         return countriesService.addNewCountrie(countries);
     }
+
+    @DeleteMapping("/deleteCountrie")
+    public void deleteCountrie(Long id){
+        countriesService.deleteCountrie(id);
+    }
 }
